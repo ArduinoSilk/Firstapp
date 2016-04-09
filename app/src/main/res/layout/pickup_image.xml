@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    <GridView
+        android:id="@+id/grdimgview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:gravity="center"
+        android:columnWidth="90dp"
+        android:layout_above="@+id/btnsend"
+        android:stretchMode="columnWidth"
+        android:layout_alignParentTop="true">
+
+        </GridView>
+    
+
+    <Button
+        android:id="@+id/btnsend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/button_text"
+        android:paddingLeft="@dimen/button_pad"
+        android:paddingRight="@dimen/button_pad"
+        android:textSize="@dimen/activity_text_size"
+        android:background="@drawable/roundshapebtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="35dp"
+
+        android:layout_alignParentRight="true"
+        android:text="@string/send"/>
+    <Button
+        android:id="@+id/load_picture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/button_text"
+        android:paddingLeft="@dimen/button_pad"
+        android:paddingRight="@dimen/button_pad"
+        android:textSize="@dimen/activity_text_size"
+        android:background="@drawable/roundshapebtn"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="35dp"
+        android:text="@string/select_image"/>
+
+</RelativeLayout>
